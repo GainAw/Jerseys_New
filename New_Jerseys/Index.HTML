@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>Premier Jerseys</title>
+<style>
+@keyframes nott {
+0%{margin-left:700px}
+1%{color:black;}
+45% {color:#111111;}
+75%{color:gray;margin-right:550px}
+95%{margin-left:5px;color:white}
+100%{margin-left:0px;}
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#content{
+  height:1000px;
+  margin:auto;
+}
+#navigation{
+  position:fixed;
+  top:-0%;
+  width:100%;
+  height:65px;
+  background-color: black;
+  left:-0%;
+  z-index:1;
+  color:white;
+  padding-top:35px
+}
+#navigation_spacer{
+  position:absolute;
+  top:-0%;
+  width:100%;
+  height:100px;
+  left:-0%
+}
+.perrytheplatypus {
+  min-height: 900px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: 50% 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index:0;
+  background-image: url("http://www1.pictures.zimbio.com/fp/Iago+Silva+Thiago+Silva+Plays+Soccer+Sons+8upurPN48fil.jpg");
+}
+.caption {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  width:400px;
+  transform: translateX(-50%);
+  left:50%;
+  color:white;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+a:link{
+  text-decoration: none;
+  color:white;
+  font-size:20px;
+  padding:20px
+}
+a:visited{
+  color:white;
+}
+a:hover{
+  border-bottom: 1px white solid;
+}
+#navigation h1{
+  color:black;
+  animation:nott 10s linear 1s infinite normal none running;
+  color:white;
+  position:relative;
+  top:-40%;
+  float:right;
+}
+#content{
+  width:75%;
+  margin:auto;
+  margin-top:10px;
+}
+
+/*slideshow stuff*/
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+/*work*/
+</style>
+</head>
+<body>
+<div id="navigation">
+<a href="index.HTML">Indexio</a>
+<a href="about">About</a>
+<a href="shop">Shop</a>
+<h1>Premier Jerseys</h1>
+</div>
+<div id="navigation_spacer"></div>
+<div class="perrytheplatypus">
+  <div class="caption">
+  <h1>Premier Jerseys</h1>
+  <p>Providing the Reno-Sparks area with high-quality apparel, in the form of authentic soccer jerseys, allowing customers the opportunity to represent their favorite teams, while embracing current trends and having a fashion-forward mentality.</p>
+</div>
+</div>
+<div id="content">
+  <h2>What We Do</h2>
+<p>Premier Jerseys is the highest quality jersey shop on the market. Using only the finest of <span style="text-decoration:line-through">smuggling</span> shipping methods (through drone shipping, child labor, AMTRAK, and nuclear-powered quantum computing technology) we ensure that you will have the greatest shopping experience on this side of Tennessee. But most importantly we don't have employees to underpay.
+<p> </p>
+</div>
+</body>
+</html>
