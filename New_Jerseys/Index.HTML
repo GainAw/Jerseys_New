@@ -15,7 +15,7 @@
   to {opacity: 1}
 }
 #content{
-  height:1000px;
+  height:750px;
   margin:auto;
 }
 #navigation{
@@ -77,6 +77,7 @@ position:fixed;
 bottom:0;
 left:0;
 text-align:center;
+z-index: 5;
 }
 a:link{
   text-decoration: none;
@@ -92,7 +93,7 @@ a:hover{
 }
 #navigation h1{
   color:black;
-  animation:nott 7s linear 1s 1 normal forwards running;
+  animation:nott 3s linear 1s 1 normal forwards running;
   color:white;
   position:relative;
   top:-40%;
@@ -107,18 +108,17 @@ h1, h2{font-family: 'Anton', sans-serif;}
 h3, h4, a {font-family: 'Roboto', sans-serif;}
 h5, h6, p{font-family: 'Oswald', sans-serif;}
 h6 {color:White;}
-.mySlides{width:500px;height:400px}
-.Slider{background-image:   linear-gradient(
-    rgba(10,10,10,.8),
-    rgba(10,10,10,.8));z-index:2;}
-.Slider:hover{background-image: rgba(10,10,10,0.5);z-index:2;}
+.mySlides{width:500px;height:398px;z-index:0;position: absolute;transform: translateX(-50%);left:50%;border:black 2px solid;}
+.shopLinker{width:510px;height:410px;position: absolute;transform:translateX(-50%);left:50%;}
+.Slider{z-index:2;width:500px;height:400px;position: absolute;transform:translateX(-50%);left:50%;display:none;}
+.shopLinker:hover > .Slider{background-image: linear-gradient(rgba(10,10,10,0.5),rgba(10,10,10,0.5));z-index:2;;width:500px;display:block;top:-6%}
 </style>
 </head>
 <body>
 <div id="navigation">
-<a href="index.HTML">Indexio</a>
-<a href="about">About</a>
-<a href="shop">Shop</a>
+<a href="Index.HTML">Indexio</a>
+<a href="About.HTML">About</a>
+<a href="Shop.HTML">Shop</a>
 <h1 style="color:black;">Premier Jerseys</h1>
 </div>
 <div id="navigation_spacer"></div>
@@ -133,20 +133,24 @@ h6 {color:White;}
   <h2>What We Do</h2>
 <p>Premier Jerseys is the highest quality jersey shop on the market. Using only the finest of <span style="text-decoration:line-through">smuggling</span> shipping methods (through drone shipping, child labor, AMTRAK, and nuclear-powered quantum computing technology) we ensure that you will have the greatest shopping experience on this side of Tennessee. But most importantly we don't have employees to underpay.
 <p>Using our trademarked "Weenie Boat" technology, we can assure you that if our drones and other superior shipping methods don't work for you, that our sausage-mobile will. For us, the customer's satisfaction is the only factor taken into consideration.</p>
-<center>
   <h2>What We Sell</h2>
-<div class="Slider">
 <div style="margin-top:5%;">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\ahora we be nacionales\a guey\argentina.jpg">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\ahora we be nacionales\a guey\italy.jpg">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\ahora we be nacionales\a guey\uruguay.jpg">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\Clubbin\Agay\juventus.jpg">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\Clubbin\Agay\paris saint-germain.jpg">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\Clubbin\Agay\DC united.jpg">
-<img class="mySlides w3-animate-fading" src="photo\Jerseys\Clubbin\Homr\IM_Home.webp">
+<img class="mySlides" src="photo\Jerseys\ahora we be nacionales\a guey\argentina.jpg">
+<img class="mySlides" src="photo\Jerseys\ahora we be nacionales\a guey\italy.jpg">
+<img class="mySlides" src="photo\Jerseys\ahora we be nacionales\a guey\uruguay.jpg">
+<img class="mySlides" src="photo\Jerseys\Clubbin\Agay\juventus.jpg">
+<img class="mySlides" src="photo\Jerseys\Clubbin\Agay\paris saint-germain.jpg">
+<img class="mySlides" src="photo\Jerseys\Clubbin\Agay\DC united.jpg">
+<img class="mySlides" src="photo\Jerseys\Clubbin\Homr\IM_Home.webp">
+</div>
+<a href="Shop.HTML">
+<div class="shopLinker">
+<div class="Slider">
+<button style="position:absolute;transform:translateX(-50%);left:50%;top:40%"><h3>Check Out Our Shop</h3></button>
 </div>
 </div>
-<p></center>
+</a>
+<p>
 <script>
 var slideIndex = 0;
 carousel();
