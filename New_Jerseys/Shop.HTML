@@ -78,6 +78,7 @@ left:0;
 text-align:center;
 z-index: 5;
 }
+.fooot_Spacer{height:50px}
 a:link{
   text-decoration: none;
   color:white;
@@ -106,10 +107,14 @@ a:hover{
 h1, h2{font-family: 'Anton', sans-serif;}
 h3, h4, a {font-family: 'Roboto', sans-serif;}
 h5, h6, p{font-family: 'Oswald', sans-serif;}
+button{background-color:lightgrey;padding:0px 10px;border:3px outset;}
+button:focus{outline:0;}
+button:hover{border:3px inset;}
 .fooot h6 {color:White;}
 img{width:200px;height:200px}
 td{border:black 2px solid;}
-table{transform: translateX(50%);left:-50%;}
+table{margin:auto;}
+.awayjer{display:none;}
 </style>
 </head>
 <body>
@@ -130,8 +135,10 @@ table{transform: translateX(50%);left:-50%;}
 <div id="content">
 <h2>What We Have</h2>
 <p>All of our (AUTHENTIC) jerseys cost $150, plus extra charges where applicable</p>
-  <h3 onClick="">Club Jerseys</h3><h3 onClick="">Home Jerseys</h3>
-  <table>
+  <button id="homej" onclick="Home()"><h3>Home Jerseys</h3></button>
+  <button id="awayj"  onclick="Away()"><h3>Away Jerseys</h3></button>
+  <h3>Club Jerseys</h3>
+  <table class="homejer">
     <tr>
         <td>
           <h4>Atlanta United FC</h4>
@@ -244,6 +251,8 @@ table{transform: translateX(50%);left:-50%;}
           <img src="photo\Jerseys\Clubbin\Homr\BD_Home.webp">
         </td>
     </tr>
+  </table>
+  <table class="homejer">
     <tr>
         <td>
           <h4>Paris Saint Germain</h4>
@@ -254,10 +263,140 @@ table{transform: translateX(50%);left:-50%;}
           <img src="photo\Jerseys\Clubbin\Homr\OL_Home.webp">
         </td>
     </tr>
+</table>
 
-  </table>
+
+<table class="awayjer">
+  <tr>
+      <td>
+        <h4>Atlanta United FC</h4>
+        <img src="photo\Jerseys\Clubbin\agay\Atlanta United.jpg">
+      </td>
+      <td>
+        <h4>Los Angeles FC</h4>
+        <img src="photo\Jerseys\Clubbin\agay\Los Angeles.jpg">
+      </td>
+      <td>
+        <h4>LA Galaxy</h4>
+        <img src="photo\Jerseys\Clubbin\agay\LA galaxy.jpg">
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>DC United</h4>
+        <img src="photo\Jerseys\Clubbin\agay\DC united.jpg">
+      </td>
+      <td>
+        <h4>Toronto FC</h4>
+        <img src="photo\Jerseys\Clubbin\agay\toronto.png">
+      </td>
+      <td>
+      <h4>Seattle Sounders</h4>
+      <img src="photo\Jerseys\Clubbin\agay\seattle sounders.jpg">
+    </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>Chivas</h4>
+        <img src="photo\Jerseys\Clubbin\agay\chivas.jpg">
+      </td>
+      <td>
+        <h4>Club America</h4>
+        <img src="photo\Jerseys\Clubbin\agay\club america.jpg">
+      </td>
+      <td>
+        <h4>Manchester City</h4>
+        <img src="photo\Jerseys\Clubbin\agay\Manchester City.jpg">
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>Manchester United</h4>
+        <img src="photo\Jerseys\Clubbin\agay\Manchester United.jpg">
+      </td>
+      <td>
+        <h4>Chelsea</h4>
+        <img src="photo\Jerseys\Clubbin\agay\chelsea.jpg">
+      </td>
+      <td>
+        <h4>Liverpool</h4>
+        <img src="photo\Jerseys\Clubbin\agay\liverpool.jpg">
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>Arsenal</h4>
+        <img src="photo\Jerseys\Clubbin\agay\arsenal.jpg">
+      </td>
+      <td>
+        <h4>Tottenham</h4>
+        <img src="photo\Jerseys\Clubbin\agay\tottenham.jpg">
+      </td>
+      <td>
+        <h4>Juventus</h4>
+        <img src="photo\Jerseys\Clubbin\agay\juventus.jpg">
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>AS Roma</h4>
+        <img src="photo\Jerseys\Clubbin\agay\roma.jpg">
+      </td>
+      <td>
+        <h4>Napoli</h4>
+        <img src="photo\Jerseys\Clubbin\agay\napoli.jpg">
+      </td>
+      <td>
+        <h4>AC Milan</h4>
+        <img src="photo\Jerseys\Clubbin\agay\ac milan.jpg">
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>Inter Milan</h4>
+        <img src="photo\Jerseys\Clubbin\agay\inter milan.jpg">
+      </td>
+      <td>
+        <h4>Barcelona</h4>
+        <img src="photo\Jerseys\Clubbin\agay\barcelona.jpg">
+      </td>
+      <td>
+        <h4>Real Madrid</h4>
+        <img src="photo\Jerseys\Clubbin\agay\real madrid.jpg">
+      </td>
+  </tr>
+  <tr>
+      <td>
+        <h4>Atletico Madrid</h4>
+        <img src="photo\Jerseys\Clubbin\agay\atletico madrid.jpg">
+      </td>
+      <td>
+        <h4>Bayern Munich</h4>
+        <img src="photo\Jerseys\Clubbin\agay\munich.jpg">
+      </td>
+      <td>
+        <h4>Borussia Dortmund</h4>
+        <img src="photo\Jerseys\Clubbin\agay\borussia dortmund.jpg">
+      </td>
+  </tr>
+</table>
+<table class="awayjer">
+  <tr>
+      <td>
+        <h4>Paris Saint Germain</h4>
+        <img src="photo\Jerseys\Clubbin\agay\paris saint-germain.jpg">
+      </td>
+      <td>
+        <h4>Olympique Lyonnais</h4>
+        <img src="photo\Jerseys\Clubbin\agay\olympique.jpg">
+      </td>
+  </tr>
+</table>
+
+
+
   <h3>National Jerseys</h3>
-  <table>
+  <table class="homejer">
     <tr>
         <td>
             <h4>Mexico</h4>
@@ -331,9 +470,101 @@ table{transform: translateX(50%);left:-50%;}
         </td>
     </tr>
   </table>
+
+
+  <table class="awayjer">
+    <tr>
+        <td>
+            <h4>Mexico</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\mexico.png">
+
+
+        </td>
+        <td>
+            <h4>United States</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\us.jpg">
+        </td>
+        <td>
+            <h4>England</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\england.jpg">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h4>Italy</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\italy.jpg">
+        </td>
+        <td>
+            <h4>Spain</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\spai.jpg">
+        </td>
+        <td>
+            <h4>Germany</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\germany.jpg">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h4>France</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\france.jpg">
+        </td>
+        <td>
+            <h4>Portugal</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\portugal.jpg">
+        </td>
+        <td>
+            <h4>Netherlands</h4>
+            <img src="photo\Jerseys\ahora we be nacionales\a guey\netherlands.webp">
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <h4>Argentina</h4>
+          <img src="photo\Jerseys\ahora we be nacionales\a guey\argentina.jpg">
+        </td>
+        <td>
+          <h4>Brazil</h4>
+          <img src="photo\Jerseys\ahora we be nacionales\a guey\brazil.jpg">
+        </td>
+        <td>
+          <h4>Colombia</h4>
+          <img src="photo\Jerseys\ahora we be nacionales\a guey\colombia.jpg">
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <h4>Chile</h4>
+          <img src="photo\Jerseys\ahora we be nacionales\a guey\chil.jpg">
+        </td>
+        <td>
+          <h4>Uruguay</h4>
+          <img src="photo\Jerseys\ahora we be nacionales\a guey\uruguay.jpg">
+        </td>
+        <td>
+          <h4>Belgium</h4>
+          <img src="photo\Jerseys\ahora we be nacionales\a guey\belgium.jpg">
+        </td>
+    </tr>
+  </table>
 </div>
+<div class="fooot_Spacer"></div>
 <div class="fooot">
 <h6>© 2019 Premier Jerseys, Inc. All Rights Reserved</h6>
 </div>
+
 </body>
+<script>
+function Home() {
+document.getElementsByClassName("homejer").style.display = "block";
+document.getElementsByClassName("awayjer").style.display = "none";
+document.getElementById("homej").style.border = "inset";
+document.getElementById("awayj").style.border = "outset";
+}
+function Away() {
+document.getElementsByClassName("homejer").style.display = "none";
+document.getElementsByClassName("awayjer").style.display = "block";
+document.getElementById("homej").style.border = "outset";
+document.getElementById("awayj").style.border = "inset";
+}
+</script>
 </html>
